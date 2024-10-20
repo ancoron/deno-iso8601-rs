@@ -1,0 +1,13 @@
+{
+  "name": "@ancoron/deno-iso8601-rs",
+  "description": "ISO-8601 timestamps (Deno + Rust)",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  },
+  "unstable": [
+    "ffi"
+  ],
+  "exports": "./mod.ts"
+}

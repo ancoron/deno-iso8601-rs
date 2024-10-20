@@ -1,0 +1,18 @@
+[package]
+edition = "2021"
+name = "deno_iso8601"
+version = "0.1.0"
+license = "Apache-2.0"
+publish = false
+
+[lib]
+name = "deno_iso8601"
+crate-type = ["cdylib"]
+
+[dependencies]
+deno_bindgen = "0.8.1"
+iso8601-timestamp = { version = "0.2", default-features = false, features = ["std", "lookup"] }
+
+[profile.release]
+lto = true
+strip = "symbols"

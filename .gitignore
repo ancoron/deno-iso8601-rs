@@ -1,0 +1,10 @@
+# IDEs
+/.vscode/
+.kateproject
+*.kate-swp
+
+# temporary data
+/target/
+/bindings/
+*.svg
+perf.data*
